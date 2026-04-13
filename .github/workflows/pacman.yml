@@ -10,13 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate pacman graph
-        uses: Platane/snk@v3
+      - uses: actions/checkout@v3
+
+      - name: Generate Pacman
+        uses: rbbit/github-contribution-pacman@main
         with:
-          github_user_name: marcosvallecillos
-          outputs: |
-            dist/pacman-contribution-graph.svg
-            dist/pacman-contribution-graph-dark.svg?palette=github-dark
+          github_user: marcosvallecillos
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4

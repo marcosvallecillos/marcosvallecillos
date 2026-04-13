@@ -1,6 +1,4 @@
 <h1 align="center">Hola 👋, soy Marcos Vallecillos</h1>
-<h3 align="center">Desarrollador Full Stack enfocado en aplicaciones web modernas</h3>
-
 
 #### 💻 Lenguajes
 <div align="center">
